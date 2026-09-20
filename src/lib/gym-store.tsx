@@ -40,9 +40,9 @@ export function formatDate(iso?: string) {
 
 export type MemberRow = {
   member: Member;
-  membership?: Membership;
-  plan?: Plan;
-  lastCheckIn?: Attendance;
+  membership: Membership | undefined;
+  plan: Plan | undefined;
+  lastCheckIn: Attendance | undefined;
   daysInactive: number | null;
   visits: Attendance[];
   followUps: FollowUp[];
