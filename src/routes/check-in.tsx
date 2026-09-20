@@ -22,7 +22,7 @@ export const Route = createFileRoute("/check-in")({
       },
     ],
   }),
-  component: CheckIn;
+  component: CheckIn,
 });
 
 function CheckIn() {
