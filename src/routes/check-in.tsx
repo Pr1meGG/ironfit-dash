@@ -42,7 +42,9 @@ function CheckIn() {
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              setResult(checkIn(value));
+              const r = checkIn(value);
+              console.log("CHECKIN_RESULT", JSON.stringify(r));
+              setResult(r);
               setValue("");
             }}
             className="flex flex-col items-center gap-4 py-4"
